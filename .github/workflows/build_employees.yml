@@ -39,6 +39,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/backend2:${{ env.APP_VERSION }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/backend2:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/backend2:${{ env.APP_VERSION }}

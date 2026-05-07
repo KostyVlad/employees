@@ -3,7 +3,7 @@ version: "3"
 services:
   appserver:
     container_name: server
-    image: vladkost/backend:v1.0.4
+    image: vladkost/backend2:latest
     ports:
       - 8080:8080
     depends_on:
